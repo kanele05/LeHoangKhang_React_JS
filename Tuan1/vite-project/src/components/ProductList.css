@@ -1,0 +1,20 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+
+/* Tablet: <= 900px → 2 cột */
+@media (max-width: 900px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: <= 560px → 1 cột */
+@media (max-width: 560px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
