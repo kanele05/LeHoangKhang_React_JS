@@ -5,13 +5,14 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import StudentInfo from './components/StudentInfo'
+import ContactForm from './components/ContactForm'
+import StatusBadge from './components/StatusBadge'
+import TodoApp from './components/TodoApp'
 
 function App() {
   return (
     <>
-      <Header />
-      <StudentInfo></StudentInfo>
-      <Footer />
+      <TodoApp />
     </>
   );
 }
