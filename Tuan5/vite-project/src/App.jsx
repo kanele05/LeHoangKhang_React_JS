@@ -1,38 +1,15 @@
-import { useState } from 'react';
-import TodoApp from './components/TodoApp';
-import ThemeApp from './components/theme/ThemeApp';
-import ShopApp from './components/shop/ShopApp';
-import './App.css';
 
-const EXERCISES = [
-  { id: 1, label: 'Bài 1 – useReducer', component: <TodoApp /> },
-  { id: 2, label: 'Bài 2 – Context API', component: <ThemeApp /> },
-  { id: 3, label: 'Bài 3 – Shopping Cart', component: <ShopApp /> },
-];
+import './App.css'
+import Bai1 from './bai1/Bai1'
+import Bai2 from './bai2/Bai2'
+// import Bai3 from './bai3/Bai3'
+// import Bai4 from './bai4/Bai4'
+// import Bai5 from './bai5/Bai5'
+// import Bai6 from './bai6/Bai6'
+// import Bai7 from './bai7/Bai7'
 
 function App() {
-  const [active, setActive] = useState(1);
-  const current = EXERCISES.find((e) => e.id === active);
-
-  return (
-    <>
-      {/* Tab navigation */}
-      <nav className="app-nav">
-        {EXERCISES.map((ex) => (
-          <button
-            key={ex.id}
-            className={`app-nav-btn ${active === ex.id ? 'active' : ''}`}
-            onClick={() => setActive(ex.id)}
-          >
-            {ex.label}
-          </button>
-        ))}
-      </nav>
-
-      {/* Active exercise */}
-      <div>{current.component}</div>
-    </>
-  );
+  return <Bai2 />
 }
 
-export default App;
+export default App

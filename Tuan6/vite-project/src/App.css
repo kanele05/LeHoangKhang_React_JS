@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+/* ── Exercise Tab Navigation ─────────────────────────────────────────────── */
+.app-nav {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #12121f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-nav-btn {
+  padding: 0.4rem 1.1rem;
+  border-radius: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: #8888aa;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.app-nav-btn:hover {
+  color: #e0e0ff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.app-nav-btn.active {
+  background: #646cff;
+  border-color: #646cff;
+  color: #fff;
+  font-weight: 600;
+}
