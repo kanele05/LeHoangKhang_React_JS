@@ -1,0 +1,34 @@
+:root {
+  --app-bg: #f7f7f8;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --text-h: #111827;
+  --border: #d1d5db;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+
+  color-scheme: light;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[data-theme='dark'] {
+  --app-bg: #111827;
+  --surface: #1f2937;
+  --text: #e5e7eb;
+  --text-h: #f9fafb;
+  --border: #374151;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--app-bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100svh;
+}
